@@ -1,3 +1,6 @@
+This project is used to ingest the data from S3 to snowflake using snowpipe.
+Whenever there is a new object in the source S3 bucket,a lambda will be invoked which will perform some transformation,put the new file into another s3 bucket and snowpipe will be trigered which will populate the file data into snowflake table.
+
 1)	Create a source s3 bucket with default settings (s3-source-data-demo).
 
 2) Create a target s3 bucket which will be target for lambda function and source for snowflake with 
@@ -54,5 +57,3 @@ all object create events
 d) destination:
 SQS queue
 enter SQS queue ARN (copy it from show pipes)
-
-
