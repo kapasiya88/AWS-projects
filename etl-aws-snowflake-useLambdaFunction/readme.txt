@@ -29,7 +29,7 @@ Role name: mysnowflakerole-kajal
 Refer mysnowflakerole-kajal.json
 
 7) setup snowflake infrastructure:
-refer snowflake_commands.docx
+refer snowflake_commands.sql
 
 8)  update the ARN and external id from the integration object created in above step to the IAM role created in step 6.
 
